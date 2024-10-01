@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+
+    <!-- رأس الصفحة -->
+    <header class="header">
+        <div class="logo-lib">
+            <img src="logo3.png" alt="Harvard Logo" />
+        </div>
+       
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- شريط البحث -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search books by title or author" onkeyup="searchBooks()">
+        <button onclick="searchBooks()">Search</button>
+    </div>
+
+    <!-- القائمة الجانبية لتصفية الكتب حسب المادة -->
+    <div class="sidebar">
+        <h2>Filter by Subject</h2>
+        <ul>
+            <li><a href="#" onclick="filterBooks('all')">All Books</a></li>
+            <li><a href="#" onclick="filterBooks('computer-programming')">Computer Programming</a></li>
+            <li><a href="#" onclick="filterBooks('computer-networks')">Computer Networks</a></li>
+            <li><a href="#" onclick="filterBooks('software-engineering')">Software Engineering</a></li>
+            <li><a href="#" onclick="filterBooks('database-systems')">Database Systems</a></li>
+            <li><a href="#" onclick="filterBooks('ai')">Artificial Intelligence</a></li>
+            <li><a href="#" onclick="filterBooks('data-structures')">Data Structures</a></li>
+        </ul>
+    </div>
+
+    <!-- منطقة عرض الكتب -->
+    <div class="content">
+        <div class="book" data-subject="computer-programming">
+            <img src="cover1.jpg" alt="Book Cover">
+            <div class="book-info">
+              <h3>Computer Science Distilled</h3>
+                <p>Author: Wladston Ferreira-Leite</p>
+                <p>A concise and comprehensive introduction to the field of computer science.</p>
+                <a href="Wladston-Ferreira-Filho-Computer-Science-Distilled.pdf" download>
+                <button>Download PDF</button> <!-- زر التحميل هنا -->
+                </a>
+            </div>
+        </div>
+        
+        <div class="book" data-subject="computer-programming">
+            <img src="cover2.jpg" alt="Book Cover">
+            <div class="book-info">
+              <h3>Learn Python the Hard Way</h3>
+                <p>Author:Zed Shaw's </p>
+                <p>This book of 52 hands-on projects is perfect for everyone who's written Python code but isn't yet comfortable taking new ideas all the way to finished software.
+                </p>
+                <a href="learn-python3-the-hard-way-nov-15-2018.pdf" download>
+                <button>Download PDF</button> <!-- زر التحميل هنا -->
+               </a>
+            </div>
+        </div>
+        <div class="book" data-subject="computer-programming">
+            <img src="cover3.jpg" alt="Book Cover">
+            <div class="book-info">
+              <h3>Eloquent JavaScript</h3>
+                <p>Author: Marijn Haverbeke </p>
+                <p>A Modern Introduction to Programming provides a thorough walkthrough of the core aspects of JavaScript as a coding language.</p>
+                <a href="2018_eloquent_javascript.pdf" download>
+                <button>Download PDF</button> <!-- زر التحميل هنا -->
+               </a>
+            </div>
+        </div>
+        <div class="book" data-subject="computer-programming">
+            <img src="cover4.png" alt="Book Cover">
+            <div class="book-info">
+              <h3>C Programming Language</h3>
+                <p>Author: Brian Kernighan and Dennis Ritchie</p>
+                <p>Introductory Book for C.</p>
+                <a href="The ANSI C Programming Language by Brian W. Kernighan, Dennis M. Ritchie.pdf" download>
+                <button>Download PDF</button> <!-- زر التحميل هنا -->
+               </a>
+            </div>
+        </div>
+        <div class="book" data-subject="computer-programming">
+            <img src="cover2.jpg" alt="Book Cover">
+            <div class="book-info">
+              <h3>Learn Python the Hard Way</h3>
+                <p>Author:Zed Shaw's </p>
+                <p>This book of 52 hands-on projects is perfect for everyone who's written Python code but isn't yet comfortable taking new ideas all the way to finished software.
+                </p>
+                <a href="learn-python3-the-hard-way-nov-15-2018.pdf" download>
+                <button>Download PDF</button> <!-- زر التحميل هنا -->
+               </a>
+            </div>
+        </div>
+
+
+        <div class="book" data-subject="computer-networks">
+            <img src="https://via.placeholder.com/60x80" alt="Book Cover">
+            <div>
+                <h3>Networking Fundamentals</h3>
+                <p>Author: Jane Smith</p>
+                <a href="path/to/your/book2.pdf" download>
+                    <button>Download PDF</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="book" data-subject="software-engineering">
+            <img src="https://via.placeholder.com/60x80" alt="Book Cover">
+            <div>
+                <h3>Software Engineering Principles</h3>
+                <p>Author: Mike Ross</p>
+                <a href="path/to/your/book3.pdf" download>
+                    <button>Download PDF</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="book" data-subject="database-systems">
+            <img src="https://via.placeholder.com/60x80" alt="Book Cover">
+            <div>
+                <h3>Database Design</h3>
+                <p>Author: Sarah Connor</p>
+                <a href="path/to/your/book4.pdf" download>
+                    <button>Download PDF</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="book" data-subject="ai">
+            <img src="https://via.placeholder.com/60x80" alt="Book Cover">
+            <div>
+                <h3>AI for Beginners</h3>
+                <p>Author: Ada Lovelace</p>
+                <a href="path/to/your/book5.pdf" download>
+                    <button>Download PDF</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="book" data-subject="data-structures">
+            <img src="https://via.placeholder.com/60x80" alt="Book Cover">
+            <div>
+                <h3>Data Structures and Algorithms</h3>
+                <p>Author: Alan Turing</p>
+                <a href="path/to/your/book6.pdf" download>
+                    <button>Download PDF</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function searchBooks() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const books = document.querySelectorAll('.book');
+            books.forEach(book => {
+                const title = book.querySelector('h3').textContent.toLowerCase();
+                const author = book.querySelector('p').textContent.toLowerCase();
+                if (title.includes(input) || author.includes(input)) {
+                    book.style.display = 'flex';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        }
+
+        function filterBooks(subject) {
+            const books = document.querySelectorAll('.book');
+            books.forEach(book => {
+                if (subject === 'all' || book.getAttribute('data-subject') === subject) {
+                    book.style.display = 'flex';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

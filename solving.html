@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Solving - Quiz</title>
+    <link rel="stylesheet" href="solving.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Problem Solving Quiz</h1>
+        <p class="subtitle">Challenge yourself and solve these problems!</p>
+        <div id="timer">Time Left: 40:00</div>
+        <div id="remaining-questions"></div> <!-- عنصر لعرض عدد الأسئلة المتبقية -->
+    </header>
+
+    <section class="quiz-section">
+        
+        <div id="quiz-container">
+            <p id="question-text">Question will appear here</p>
+            <div class="options-container">
+                <label class="option"><input type="radio" name="answer" value="1"> <span id="option1">Option 1</span></label>
+                <label class="option"><input type="radio" name="answer" value="2"> <span id="option2">Option 2</span></label>
+                <label class="option"><input type="radio" name="answer" value="3"> <span id="option3">Option 3</span></label>
+                <label class="option"><input type="radio" name="answer" value="4"> <span id="option4">Option 4</span></label>
+            </div>
+            <button class="submit-btn" onclick="submitAnswer()">Submit</button>
+        </div>
+        <div id="result" class="result"></div>
+    </section>
+
+    <footer class="page-footer">
+        <p>&copy; 2024 Problem Solving Challenge by; osama mohamed</p>
+    </footer>
+
+    <script src="solving.js"></script>
+</body>
+</html>

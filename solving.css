@@ -1,0 +1,130 @@
+/* Reset القيم الأساسية */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* تصميم الهيدر */
+.page-header {
+    background-color: #2e2c2c; /* لون أنيق */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #f7f7f7;
+    font-weight: 300;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+/* تايمر */
+#timer {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: red;
+    margin-top: 15px;
+}
+
+/* قسم الأسئلة */
+.quiz-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+#quiz-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 12px;
+    width: 60%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#question-text {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #e6e6e6;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    background-color: #3867d6;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3055b5;
+}
+
+/* رسالة النتيجة */
+.result {
+    font-size: 1.5em;
+    color: green;
+    margin-top: 20px;
+}
+
+/* تصميم الفوتر */
+.page-footer {
+    background-color: #2e2c2c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 5px solid #3b4f68;
+}

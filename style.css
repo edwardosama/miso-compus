@@ -1,0 +1,145 @@
+/* Reset بعض التنسيقات الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* تنسيق الهيدر */
+.header {
+    background-color: #A51C30;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيق قسم الـ Hero */
+.hero-section {
+    background: url('hero1.jpg') no-repeat center center/cover;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.btn {
+    background-color: #691515;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #302e2e;
+}
+
+/* تنسيق قسم About */
+.about-section {
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #A51C30;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* تنسيق قسم البرامج */
+.programs-section {
+    padding: 50px;
+    background-color: white;
+}
+
+.programs-section h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #A51C30;
+    margin-bottom: 40px;
+}
+
+.program-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.program {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.program h3 {
+    font-size: 1.8em;
+    color: #A51C30;
+}
+
+.program p {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* الفوتر */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

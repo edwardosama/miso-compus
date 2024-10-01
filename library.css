@@ -1,0 +1,181 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* تصميم رأس الصفحة */
+.header {
+    background-color: #2e2c2c; /* لون هارفارد */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    color: white;
+} 
+.logo-lib {
+margin-right: auto; /* دفع القائمة إلى اليسار */
+}
+.navbar {
+display: flex; /* تنظيم عناصر القائمة في سطر */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: right;
+}
+
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #414040; /* لون هارفارد */
+}
+/* تصميم شريط البحث */
+.search-bar {
+    background-color: #2e2c2c; /* لون هارفارد */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.search-bar input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #c39c33; /* لون هارفارد */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #b28c29; /* لون هارفارد */
+}
+
+/* القائمة الجانبية */
+.sidebar {
+    width: 250px;
+    background-color: #2e2c2c; /* لون هارفارد */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.sidebar h2 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #2e2c2c; /* لون هارفارد */
+    display: block;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #888787; /* لون هارفارد */
+}
+
+/* منطقة الكتب */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.book {
+background-color: white;
+padding: 15px;
+margin-bottom: 15px;
+border-radius: 5px;
+border: 1px solid #fffcfc;
+display: flex; /* استخدام flex لعرض العناصر بشكل أفقي */
+flex-direction: row; /* تغيير الاتجاه لعرض العناصر أفقيًا */
+align-items: flex-start; /* محاذاة العناصر إلى الأعلى */
+}
+
+.book img {
+width: 130px; /* عرض كفر الكتاب */
+height: 160px; /* ارتفاع كفر الكتاب */
+margin-right: 25px; /* مسافة بين الكفر والمعلومات */
+}
+
+.book h3 {
+margin: 0; /* إزالة الهامش */
+font-size: 25px; /* حجم خط العنوان أكبر */
+font-family: 'Arial', sans-serif; /* اختيار خط أنيق */
+}
+
+.book p {
+margin: 5px 0 0; /* هامش أعلى الوصف */
+font-family: 'Arial', sans-serif; /* اختيار خط أنيق */
+}
+
+.book .book-info {
+flex-grow: 1; /* اجعل المعلومات تأخذ المساحة المتبقية */
+}
+
+.book button {
+padding: 10px;
+background-color: #009688; /* لون الزر */
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px; /* إضافة مسافة أعلى الزر */
+font-family: 'Arial', sans-serif; /* اختيار خط أنيق للزر */
+}
+
+.book button:hover {
+background-color: #00796b; /* تغيير لون الزر عند التحويم */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+    }
+}

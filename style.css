@@ -165,3 +165,36 @@ button.btn:hover {
     bottom: 0; /* تثبيت الفوتر أسفل الصفحة */
     width: 100%; /* عرض كامل للفوتر */
 }
+/* الشاشات الصغيرة مثل الهواتف */
+@media (max-width: 768px) {
+    .page-header {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .quiz-section {
+        padding: 15px;
+    }
+
+    #timer {
+        font-size: 1.1rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+/* الشاشات الأصغر مثل iPhone SE أو الهواتف الصغيرة */
+@media (max-width: 375px) {
+    .page-header {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .submit-btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

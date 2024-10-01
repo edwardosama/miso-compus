@@ -96,43 +96,6 @@ body {
     line-height: 1.8;
     color: #555;
 }
-
-/* تنسيق قسم البرامج */
-.programs-section {
-    padding: 50px;
-    background-color: white;
-}
-
-.programs-section h1 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #A51C30;
-    margin-bottom: 40px;
-}
-
-.program-list {
-    display: flex;
-    justify-content: space-around;
-}
-
-.program {
-    background-color: #f9f9f9;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.program h3 {
-    font-size: 1.8em;
-    color: #A51C30;
-}
-
-.program p {
-    margin-top: 10px;
-    color: #555;
-}
-
 /* الفوتر */
 .footer {
     background-color: #333;
@@ -142,4 +105,63 @@ body {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* تصميم قسم الاتصال */
+.contact-section {
+    padding: 40px 20px; /* حشوة القسم */
+    text-align: center; /* توسيط النص */
+}
+
+.container {
+    max-width: 600px; /* عرض أقصى للحاوية */
+    margin: 0 auto; /* توسيط الحاوية */
+    background-color: white; /* خلفية بيضاء */
+    padding: 30px; /* حشوة للحاوية */
+    border-radius: 8px; /* زوايا دائرية */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+}
+
+h1 {
+    color: #A50034; /* لون العنوان */
+}
+
+.input-group {
+    margin-bottom: 20px; /* مسافة بين المدخلات */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* عرض كامل */
+    padding: 10px; /* حشوة داخلية */
+    border: 1px solid #ccc; /* لون الحدود */
+    border-radius: 4px; /* زوايا دائرية */
+    font-size: 16px; /* حجم الخط */
+}
+
+button.btn {
+    background-color: #A50034; /* لون الزر */
+    color: white; /* لون النص داخل الزر */
+    padding: 10px 20px; /* حشوة الزر */
+    border: none; /* إزالة الحدود */
+    border-radius: 4px; /* زوايا دائرية */
+    cursor: pointer; /* تغيير المؤشر عند التحويم */
+    font-size: 16px; /* حجم الخط */
+    transition: background-color 0.3s; /* تأثير الانتقال عند تغيير اللون */
+}
+
+button.btn:hover {
+    background-color: #900020; /* لون الزر عند التحويم */
+}
+
+/* تصميم الفوتر */
+.footer {
+    background-color: #A50034; /* لون الفوتر */
+    color: white; /* لون النص */
+    text-align: center; /* توسيط النص */
+    padding: 10px 0; /* حشوة الفوتر */
+    position: relative; /* إضافة موضع نسبي */
+    bottom: 0; /* تثبيت الفوتر أسفل الصفحة */
+    width: 100%; /* عرض كامل للفوتر */
 }
